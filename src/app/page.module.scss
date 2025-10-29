@@ -1,0 +1,406 @@
+$color-backup: #01272079;
+body {
+  background-color: #000000;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.6;
+  object-fit: cover;
+  filter: blur(1.3px);
+}
+
+.intro,
+.news,
+.newst,
+.ourmaint,
+.imp_cont {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.5s ease forwards;
+  .introtext {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    max-width: 600px;
+    margin-left: 400px;
+    margin-top: 50px;
+  }
+}
+
+.logocont {
+  display: flex;
+  pointer-events: none;
+  user-select: none;
+  position: relative;
+  z-index: 1000;
+  margin-left: 400px;
+  margin-top: 170px;
+}
+
+.logo {
+  width: 500px;
+  height: auto;
+}
+
+.playcont {
+  display: flex;
+  max-width: 600px;
+  margin-top: 30px;
+  margin-left: 400px;
+  gap: 30px;
+
+  button {
+    background-color: #01272079;
+    border-radius: 5px;
+    border: 2px solid #008d78;
+    width: 230px;
+    height: 70px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  button:hover {
+    background-color: #00aa8b79;
+    transition: background-color 0.2s ease-in-out;
+  }
+  a {
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 550;
+  }
+}
+
+.game_logo_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  background-color: #01272079;
+  border-radius: 5px;
+  border: 2px solid #008d78;
+
+  img {
+    height: 40px;
+    padding: 5px;
+    pointer-events: none;
+    user-select: none;
+  }
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 230px;
+  padding-bottom: 150px;
+  .newst {
+    color: white;
+    margin-top: 50px;
+    font-size: 80px;
+  }
+}
+
+.list {
+  border-radius: 10px;
+  height: 225px;
+  width: 400px;
+}
+
+.newslist {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.infonewslist {
+  display: block;
+  margin-top: 70px;
+  padding: 30px;
+  background-color: #01272079;
+  border: 2px solid #008d78;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500;
+}
+
+.listmaint {
+  color: white;
+  margin-top: 20px;
+}
+
+.listt {
+  color: white;
+  font-size: 20px;
+  max-width: 500;
+  margin-top: 10px;
+}
+
+.listbtn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 15px 80px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border: 3px solid transparent;
+  background-color: #00aa8b79;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.listbtn:hover {
+  background-color: #02504279;
+  border: 3px solid #00aa8b79;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.listhr {
+  border: none;
+  height: 3px;
+  background-color: #00aa8b;
+  margin: 20px 0;
+}
+
+.bghr {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  height: 3px;
+  width: 100%;
+  border: none;
+  background-color: #04816a;
+}
+
+.ourgames {
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  .ourmaint {
+    color: white;
+    margin-top: 50px;
+    font-size: 80px;
+  }
+}
+
+.list {
+  border-radius: 10px;
+  height: 225px;
+  width: 400px;
+}
+
+.newslist {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ourgameslistcont {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gamelist {
+  display: block;
+  margin-top: 70px;
+  padding: 30px;
+  background-color: #01272079;
+  border: 2px solid #008d78;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500;
+}
+
+.gamelistmaint {
+  color: white;
+  margin-top: 20px;
+}
+
+.gamelistt {
+  color: white;
+  font-size: 20px;
+  max-width: 500;
+  margin-top: 10px;
+}
+
+.gamelistbtn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 15px 80px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border: 3px solid transparent;
+  background-color: #00aa8b79;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.gamelistbtn:hover {
+  background-color: #02504279;
+  border: 3px solid #00aa8b79;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.gamelisthr {
+  border: none;
+  height: 3px;
+  background-color: #00aa8b;
+  margin: 20px 0;
+}
+
+.imp_cont {
+  display: block;
+  margin-top: 100px;
+  padding: 30px;
+  background-color: #01272079;
+  border: 2px solid #008d78;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  text-align: center;
+  max-width: 500;
+}
+
+.imp_maintext {
+  color: white;
+  font-size: 30px;
+  max-width: 500;
+  margin-top: 10px;
+}
+
+.imp_text {
+  color: white;
+  font-size: 30px;
+}
+
+.impt_btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 15px 80px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border: 3px solid transparent;
+  background-color: #00aa8b79;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.impt_btn:hover {
+  background-color: #02504279;
+  border: 3px solid #00aa8b79;
+  transition: background-color 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .logocont {
+    margin-top: 150px;
+    justify-content: center;
+    margin-left: 0;
+    z-index: 1000;
+  }
+  .logo {
+    width: 300px;
+    height: auto;
+  }
+
+  .introtext {
+    font-size: 25px !important;
+    max-width: 320px !important;
+    margin-left: 15% !important;
+    margin-top: 50px !important;
+  }
+
+  .playcont {
+    justify-content: center;
+    max-width: 400px;
+    margin-top: 50px;
+    margin-left: 15px;
+    gap: 30px;
+
+    button {
+      width: 160px;
+      height: 70px;
+    }
+
+    a {
+      color: #ffffff;
+      font-size: 22px;
+      text-decoration: none;
+      font-weight: 550;
+    }
+  }
+
+  .game_logo_cont {
+    width: 200px;
+
+    img {
+      height: 35px;
+      padding: 6px;
+    }
+  }
+
+  .list {
+    border-radius: 10px;
+    height: 155px;
+    width: 300px;
+  }
+
+  .infonewslist {
+    max-width: 300;
+  }
+
+  .gamelist {
+    max-width: 300;
+  }
+
+  .ourmaint {
+    font-size: 50px !important;
+  }
+
+  .imp_cont {
+    max-width: 300;
+  }
+
+  .imp_maintext {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
